@@ -15,24 +15,24 @@ def is_valid(user_input):
         # if user imputed multiple letters or symbols
         if len(user_input) > 1:
             print("Please input ONE character.")
-            user_input = input("Enter a letter: ")
+            user_input = input("\nEnter a letter: ")
 
         # if user doesn't input anything
         elif len(user_input) == 0:
-            print("Please type in your input.")
-            user_input = input("Enter a letter: ")
+            print("Please type in a letter.")
+            user_input = input("\nEnter a letter: ")
 
         else:
             character = ord(user_input)
             # checks if character is not a letter
             if character < 65 or (character > 90 and character < 97) or character > 122:
                 print(f"{user_input} is not a letter. Please try again")
-                user_input = input("Enter a letter: ")
+                user_input = input("\nEnter a letter: ")
 
             # checks if character is an accented letter
             elif character >= 192 and character <= 383:
                 print("Letters can't be accented. Please try again.")
-                user_input = input("Enter a letter: ")
+                user_input = input("\nEnter a letter: ")
 
             else:
                 invalid = False
