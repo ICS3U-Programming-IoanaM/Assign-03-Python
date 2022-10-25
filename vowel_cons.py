@@ -41,7 +41,7 @@ def is_valid(user_input):
 
 def replay():
     # variables
-    yes_no = input("would you like to check another letter? [n/y] ")
+    yes_no = input("Would you like to check another letter? [n/y] ")
     play_again = True
 
     while repeat:
